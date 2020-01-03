@@ -10,7 +10,7 @@ description: "movies"
   <div class="container">
     <div class="row">
       <div class="left">
-        <p>2020.2.7-2.10</p>
+        <p>Saturday, 3 January 2020</p>
         <h1>The Irishman</h1>
         <p>Hit man Frank Sheeran looks back at the secrets he kept as a loyal member of the Bufalino crime family in this acclaimed film from Martin Scorsese.</p>
         <button class="button"><span>Sign Up</span></button>
