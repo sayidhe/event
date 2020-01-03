@@ -1,0 +1,234 @@
+/* MIXINS
+========================================== */
+
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+     -moz-animation: #{$animation};
+       -o-animation: #{$animation};
+          animation: #{$animation};
+}
+
+@mixin animation-delay($animation-delay) {
+  -webkit-transition-delay: #{$animation-delay};
+     -moz-transition-delay: #{$animation-delay};
+       -o-transition-delay: #{$animation-delay};
+          transition-delay: #{$animation-delay};
+}
+
+@mixin keyframes($keyframes) {
+  @-webkit-keyframes #{$keyframes} { @content; }
+     @-moz-keyframes #{$keyframes} { @content; }
+       @-o-keyframes #{$keyframes} { @content; }
+          @keyframes #{$keyframes} { @content; }
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: #{$transition};
+     -moz-transition: #{$transition};
+       -o-transition: #{$transition};
+          transition: #{$transition};
+}
+
+@mixin transition-delay($transition-delay) {
+  -webkit-transition-delay: #{$transition-delay};
+     -moz-transition-delay: #{$transition-delay};
+       -o-transition-delay: #{$transition-delay};
+          transition-delay: #{$transition-delay};
+}
+
+/* KEYFRAMES
+========================================== */
+
+@include keyframes(float) {
+  0% {
+		transform: translatey(0px);
+    transform: translatex(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+    transform: translatex(20px);
+	}
+	100% {
+		transform: translatey(0px);
+    transform: translatex(0px);
+	}
+}
+
+/* BUTTON
+========================================== */
+
+/* POP-UP
+========================================== */
+
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%) scale(0.9));
+  overflow-y: auto; 
+  box-shadow: 0px 6px 30px rgba(0,0,0,0.4);
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all .3s);
+  z-index: 10;
+  background-color: $white;
+  width: 100%;
+  height: 100%;
+  
+  @media (min-width: 768px) {
+    width: calc(100% - 40px);
+    height: auto;
+    max-width: 600px;
+  }
+  
+  .content {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    
+    @media (min-width: 768px) {
+      min-height: inherit;
+    }
+    
+    .container {
+      padding: 100px 20px 140px;
+      
+      @media (min-width: 568px) {
+        padding: 50px 20px 80px;
+      }
+      
+      @media (min-width: 768px) {
+        padding: 70px 0px 90px;
+        max-width: 520px;
+        margin: 0 auto;
+      }
+    }
+    
+    .close {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 1.1rem;
+      letter-spacing: 0.05rem;
+      color: $grey;
+      @include transition(all .4s);
+      
+      &:hover {
+        cursor: pointer;
+        color: $orange;
+      }
+    }
+    
+    .title {
+      h1 {
+        text-align: center;
+        color: $black;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 2.8rem; //1.4
+        letter-spacing: 0.05rem;
+      }
+    }
+    
+    img {
+      width: 100%;
+      max-width: 220px;
+      display: inline-block;
+      margin: 30px 0 40px 0;
+      opacity: 0;
+      @include transform(translateX(60px));
+      @include transition(.2s);
+      -webkit-backface-visibility: hidden;
+      
+      @media (min-width: 768px) {
+        max-width: 300px;
+      }
+    }
+    
+    .subscribe {
+      h1 {
+        font-size: 1.5rem;
+        color: $grey;
+        line-height: 130%;
+        letter-spacing: 0.07rem;
+        margin-bottom: 30px;
+        
+        span {
+          color: $orange;
+        }
+      }
+      
+      form {
+        overflow: hidden;
+        
+        input {
+          width: 100%;
+          float: left;
+          padding: 15px 20px;
+          text-align: center;
+          font-family: inherit;
+          font-size: 1.1rem;
+          letter-spacing: 0.05rem;
+          outline: 0;
+          
+          &[type=email] {
+            margin-bottom: 15px;
+            border: 1px solid lighten($grey, 50%);
+            @include transition(all .4s);
+            
+            @media (min-width: 768px) {
+              margin-bottom: 0px;
+              width: 75%;
+              border-right-width: 0px;
+            }
+            
+            &:focus {
+              border-color: $grey;
+            }
+          }
+          
+          &[type=submit] {
+            background-color: $purple;
+            color: $white;
+            border: 1px solid $purple;
+            @include transition(all .4s);
+            
+            @media (min-width: 768px) {
+              width: 25%;
+            }
+            
+            &:hover {
+              cursor: pointer;
+              background-color: darken($purple, 10%);
+              border-color: darken($purple, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    @include transform(translate(-50%, -50%) scale(1));
+    
+    img {
+      opacity: 1;
+      @include transition(1s);
+      @include transition-delay(.3s);
+      @include transform(translateX(0px));
+    }
+  }
+}

@@ -1,0 +1,4 @@
+- id: who
+  path: /#who
+- id: register
+  path: /#register
