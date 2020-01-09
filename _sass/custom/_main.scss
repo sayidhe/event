@@ -39,7 +39,6 @@ h6 {
 }
 
 p {
-  @include font-size($headline-3);
   line-height: 170%;
 }
 
@@ -237,4 +236,12 @@ canvas {
 
 .quote {
   color: $grey;
+}
+
+.light-content {
+  #content {
+    #hero {
+      color: $white;
+    }
+  }
 }

@@ -8,25 +8,35 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="left">
-        <div class="movie-info">
+        <div class="main-info">
           <h1>{{ page.title }}</h1>
-          <div class="title-info-metadata-wrapper">
-            {% for tag in page.tags %}
-              <span>{{ tag }}</span>
-            {% endfor %}
+          <div class="basic-info">
+            <div class="first-metadata-wrapper">
+              {% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}
+            </div>
+            {% if page.casts and page.casts != "" %}
+              <div class="second-metadata-wrapper">
+                <span>{{ t.event.casts }}</span>
+                {% for cast in page.casts %}
+                  <span>{{ cast }}</span>
+                {% endfor %}
+              </div>
+            {% else %}
+            {% endif %}
           </div>
           {{ content }}
-          <p>演员： 
-            {% for cast in page.casts %}
-              <span>{{ cast }}</span>
-            {% endfor %}
-          </p>
         </div>
         <div class="time-location">
-          <p>{{ page.event_date }}</p>
-          <p>{{ page.event_location }}</p>
+          <p class="margin-bottom-half">
+            <span>{{ t.event.time }}</span>
+            <span>{{ page.event_date }}</span>
+          </p>
+          <p>
+            <span>{{ t.event.location }}</span>
+            <span>{{ page.event_location }}</span>
+          </p>
         </div>
-        <button class="button"><span>立即报名</span></button>
+        <button class="button"><span>{{ t.event.sign_up }}</span></button>
       </div>
     </div>
   </div>
@@ -35,9 +45,9 @@ layout: default
 <div id="pop-up" class="pop-up">
   <div class="content">
     <div class="container">
-      <span class="close">关闭</span>
+      <span class="close">{{ t.event.close }}</span>
       <div class="title">
-        <h1>扫描二维码</h1>
+        <h1>{{ t.event.scan_QRCode }}</h1>
       </div>
       <div class="subscribe">
         <img src="{{ site.url }}{{ site.baseurl }}{{ page.qrcode_image }}" alt="qrcode">

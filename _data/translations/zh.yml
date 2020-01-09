@@ -5,6 +5,14 @@ lang:
 menu:
   events: 活动列表
 
+event:
+  casts: 演员
+  sign_up: 立即注册
+  close: 关闭
+  scan_QRCode: 扫描二维码
+  time: 时间
+  location: 地点
+
 demo:
   success:
     title: 报名成功!

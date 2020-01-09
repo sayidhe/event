@@ -5,17 +5,20 @@ image: /assets/images/events/movie/the-irishman.jpg
 qrcode_image: /assets/images/events/movie/2020-01-04-qrcode.jpg
 tags: 
     - 2019
-    - 3小时 29 分钟
-    - 书籍改编剧情片
+    - 3h 29m
+    - Gangster Movies
 casts: 
-    - 勞勃·狄尼洛
-    - 艾爾·帕西諾
-    - 喬·派西
-event_date: 2020年1月3日 周六 下午三点
-event_location: sami 家
+    - Robert De Niro
+    - Al Pacino
+    - Joe Pesci
+event_date: "Saturday, January 3, 2020, 3pm"
+event_location: "Sami's Home"
 sign_up: true
 lang: en
-categories: en
+categories: 
+    - en
+    - movie
+class: light-content
 ---
 
-This is english version
+Hit man Frank Sheeran looks back at the secrets he kept as a loyal member of the Bufalino crime family in this acclaimed film from Martin Scorsese.

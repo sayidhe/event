@@ -5,6 +5,15 @@ lang:
 menu:
   events: Events
 
+event:
+  casts: Starring
+  sign_up: Sign Up
+  close: Close
+  scan_QRCode: Scan the QR Code
+  time: Time
+  location: Location
+
+  
 demo:
   success:
     title: 报名成功!
