@@ -158,7 +158,7 @@ body.black-hero {
   }
 }
 
-body.clor-hero {
+body.color-hero {
   #header {
     background: $primary;
     border-bottom-color: lighten($primary, 10%);
@@ -213,18 +213,6 @@ body.clor-hero {
 form {
   background: #FFF;
   padding: $space;
-}
-
-.case-study {
-  display: block;
-  padding: 1.5*$space/4;
-  text-align: left;
-}
-
-#how {
-  img {
-    max-width: 300px;
-  }
 }
 
 canvas {
