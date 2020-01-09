@@ -3,8 +3,7 @@ lang:
   zh: 中文
 
 menu:
-  # who: 关于我们
-  # register: 我要报名
+  events: 活动列表
 
 demo:
   success:

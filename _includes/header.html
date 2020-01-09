@@ -1,12 +1,16 @@
 <nav class="menu">
     <section class="links">
       <a class="link-home" href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}/">
-        {{ site.data.logos.movie }}
+        {% if lang == lang_default %}
+          {{ site.data.logos.movie }}
+        {% else %}
+          {{ site.data.logos.movie_en }}
+        {% endif %}
       </a>
       <div class="link-menus">
         {% for item in site.data.menu %}
-          {% if item.url %}<a data-scroll href="{{ item.url }}" class="link-{{ item.id }}">{{ t.menu[item.id] }}</a>
-          {% else %}<a data-scroll href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}{{ item.path }}" class="link-{{ item.id }}">{{ t.menu[item.id] }}</a>{% endif %}
+          {% if item.url %}<a href="{{ item.url }}" class="link-{{ item.id }}">{{ t.menu[item.id] }}</a>
+          {% else %}<a href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}{{ item.path }}" class="link-{{ item.id }}">{{ t.menu[item.id] }}</a>{% endif %}
         {% endfor %}
         {% include lang.html %}
       </div>

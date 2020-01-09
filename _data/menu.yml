@@ -1,4 +1,2 @@
-- id: who
-  path: /#who
-- id: register
-  path: /#register
+- id: events
+  path: /events
