@@ -3,6 +3,7 @@ published: true
 title: 爱尔兰人
 image: /assets/images/events/movie/the-irishman.jpg
 qrcode_image: /assets/images/events/movie/2020-01-04-qrcode.jpg
+icon: /assets/icons/icon-movie.svg
 tags: 
     - 2019
     - 3小时 29 分钟
@@ -15,7 +16,7 @@ event_date: "2020年1月3日 周六 下午三点"
 event_location: "Sami 家"
 sign_up: true
 lang: zh
-categories: 
+categories:
     - movie
 class: light-content
 ---

@@ -3,14 +3,16 @@ published: true
 title: Baminton
 image: /assets/images/events/sport/lindan.jpg
 qrcode_image: /assets/images/events/sport/2020-01-09-qrcode.jpg
+icon: /assets/icons/icon-sport.svg
 tags: 
-    - 2020
-    - 2小时
+    - beginner
+    - mid-level
+    - 2 hours
 event_date: "Saturday, January 12, 2020, 3pm"
 event_location: "Jingan"
 sign_up: true
 lang: en
-categories: 
+categories:
     - en
     - sport
 class: light-content

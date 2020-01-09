@@ -15,7 +15,10 @@ class: dark-header
         {% assign events = site.events | where: "lang", "en" %}
         {% for event in events %}
           <li>
-            <h2><a href="{{ site.url }}{{ site.baseurl }}{{ event.url }}">{{ event.title }}</a></h2>
+            <h2>
+              <img src="{{ event.icon }}" alt="{{ event.categories }}">
+              <a href="{{ event.url }}">{{ event.title }}</a>
+            </h2>
           </li>
         {% endfor %}
       </ul>

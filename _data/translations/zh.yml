@@ -7,7 +7,7 @@ menu:
 
 event:
   casts: 演员
-  sign_up: 立即注册
+  sign_up: 立即报名
   close: 关闭
   scan_QRCode: 扫描二维码
   time: 时间

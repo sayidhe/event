@@ -3,6 +3,7 @@ published: true
 title: The Irishman
 image: /assets/images/events/movie/the-irishman.jpg
 qrcode_image: /assets/images/events/movie/2020-01-04-qrcode.jpg
+icon: /assets/icons/icon-movie.svg
 tags: 
     - 2019
     - 3h 29m
@@ -15,7 +16,7 @@ event_date: "Saturday, January 3, 2020, 3pm"
 event_location: "Sami's Home"
 sign_up: true
 lang: en
-categories: 
+categories:
     - en
     - movie
 class: light-content
