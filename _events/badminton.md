@@ -2,7 +2,7 @@
 published: true
 title: 羽毛球
 image: /assets/images/events/sport/lindan.jpg
-qrcode_image: /assets/images/events/sport/2020-01-15-qrcode.jpg
+qrcode_image: /assets/images/events/sport/2020-01-09-qrcode.jpg
 tags: 
     - 2020
     - 2小时
