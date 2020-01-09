@@ -1,0 +1,22 @@
+---
+layout: default
+title: 活动列表
+description: "活动列表"
+---
+
+{% include utils/i18n.liquid %}
+
+<section id="events">
+  <div class="container">
+    <div class="row">
+      <ul>
+        {% assign events = site.events | where: "lang", "zh" %}
+        {% for event in events %}
+          <li>
+            <h2><a href="{{ event.url }}">{{ event.title }}</a></h2>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

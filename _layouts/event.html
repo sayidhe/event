@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+{% include utils/i18n.liquid %}
+
+<section id="hero" style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ page.image }}')">
+  <div class="container">
+    <div class="row">
+      <div class="left">
+        <div class="movie-info">
+          <h1>{{ page.title }}</h1>
+          <div class="title-info-metadata-wrapper">
+            {% for tag in page.tags %}
+              <span>{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {{ content }}
+          <p>演员： 
+            {% for cast in page.casts %}
+              <span>{{ cast }}</span>
+            {% endfor %}
+          </p>
+        </div>
+        <div class="time-location">
+          <p>{{ page.event_date }}</p>
+          <p>{{ page.event_location }}</p>
+        </div>
+        <button class="button"><span>立即报名</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="pop-up" class="pop-up">
+  <div class="content">
+    <div class="container">
+      <span class="close">关闭</span>
+      <div class="title">
+        <h1>扫描二维码</h1>
+      </div>
+      <div class="subscribe">
+        <img src="{{ site.url }}{{ site.baseurl }}{{ page.qrcode_image }}" alt="qrcode">
+      </div>
+    </div>
+  </div>
+</div>

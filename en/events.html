@@ -1,0 +1,24 @@
+---
+layout: default
+title: Event Listing
+description: "Sami's big home"
+lang: en
+translated: true
+---
+
+{% include utils/i18n.liquid %}
+
+<section id="events">
+  <div class="container">
+    <div class="row">
+      <ul>
+        {% assign events = site.events | where: "lang", "en" %}
+        {% for event in events %}
+          <li>
+            <h2><a href="{{ site.url }}{{ site.baseurl }}{{ event.url }}">{{ event.title }}</a></h2>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

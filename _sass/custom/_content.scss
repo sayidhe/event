@@ -1,8 +1,11 @@
 #content {
+  .row {
+    padding: 4*$space 0;
+  }
   #hero {
     color: $white;
     height: 100vh;
-    background-image: url(images/poster.jpg);
+    // background-image: url(images/poster.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: none;
@@ -27,6 +30,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
         @include breakpoint(mobile) {
           // padding: 8*$space 0;
         }
@@ -59,62 +63,6 @@
         width: 50%;
       }
     }
-    .clients {
-      border-top: 1px solid $line;
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      white-space: nowrap;
-      &:after,
-      &:before {
-        bottom: 0;
-        content: '';
-        position: absolute;
-        top: 0;
-        z-index: 999;
-      }
-      &:after {
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-        right: 0;
-      }
-      &:before {
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-        left: 0;
-      }
-      .wrapper {
-        bottom: 0;
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50%);
-        top: 0;
-      }
-      svg {
-        display: inline-block;
-        opacity: 0.8;
-      }
-      @include breakpoint(mobile) {
-        height: 2*$space;
-        &:after,
-        &:before {
-          width: 2*$space;
-        }
-        svg {
-          margin: 0 $space/2;
-          width: 3*$space;
-        }
-      }
-      @include breakpoint(tablet) {
-        height: 4*$space;
-        &:after,
-        &:before {
-          width: 4*$space;
-        }
-        svg {
-          margin: 0 1.5*$space/2;
-          width: 4*$space;
-        }
-      }
-    }
   }
   .grid,
   .grid-2,
@@ -132,65 +80,6 @@
       & > *:last-child {
         margin-bottom: 0
       }
-    }
-  }
-  #solutions {
-    .grid-4 {
-      a {
-        color: inherit;
-        display: block;
-        padding: 1.5*$space/4;
-        img {
-          display: block;
-          margin: 0 auto $space/2;
-          vertical-align: middle;
-          width: 3*$space;
-        }
-        &:hover {
-          background: $light;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  .product-details {
-    svg {
-      display: inline-block;
-      height: $space;
-      fill: $yellow;
-      opacity: 0.9;
-      vertical-align: bottom;
-      width: $space;
-    }
-  }
-  .screenshot {
-    overflow: hidden;
-    @include breakpoint(mobile) {
-      margin: 2*$space 0 (-3*$space) 0;
-    }
-    @include breakpoint(tablet) {
-      margin: 3*$space 0 (-4*$space) 0;
-    }
-    img {
-      margin-bottom: -5*$space;
-    }
-  }
-  #who {
-    video {
-      width: 100%;
-      @include breakpoint(mobile) {
-        width: 100%;
-      }
-    }
-  }
-  #timeline {
-    .earlybird-price {
-      font-size: 160%;
-      color: $primary;
-      vertical-align: middle;
-    }
-    .earlybird-price ~ span {
-      @include font-size($smaller);
     }
   }
 }

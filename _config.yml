@@ -12,6 +12,28 @@ keywords:
 url: "https://event.sayidhe.com"
 baseurl: ""
 
+permalink: /:categories/:title/
+collections:
+  events:
+    output: true
+    permalink: /:categories/:collection/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 # Google tracking (Analytics and Google Tag Manager)
 google_tag_manager: 
 google_analytics: 
@@ -39,6 +61,10 @@ plugins:
 lang:
   - zh
   - en
+
+# If not config, the first of languages will be the default
+lang_default:
+  - zh
 
 # sass:
 #   style: compressed

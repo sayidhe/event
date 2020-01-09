@@ -11,9 +11,9 @@ input[type=checkbox] {
         background-color: $black;
       }
       &:hover {
-        color: $yellow;
+        color: $primary;
         &:before {
-          background-color: $yellow;
+          background-color: $primary;
         }
       }
     }
@@ -42,9 +42,9 @@ input[type=checkbox] {
       width: $space;
     }
     &:hover {
-      color: $yellow;
+      color: $primary;
       &:before {
-        border-color: $yellow;
+        border-color: $primary;
       }
     }
   }
@@ -63,9 +63,9 @@ input[type=radio] {
         background-color: $black;
       }
       &:hover {
-        color: $yellow;
+        color: $primary;
         &:before {
-          background-color: $yellow;
+          background-color: $primary;
         }
       }
     }
@@ -95,9 +95,9 @@ input[type=radio] {
       border-radius: 100%;
     }
     &:hover {
-      color: $yellow;
+      color: $primary;
       &:before {
-        border-color: $yellow;
+        border-color: $primary;
       }
     }
   }
@@ -172,13 +172,13 @@ textarea,
   }
   &.required label {
     &:after {
-      color: $yellow;
+      color: $primary;
       content: ' *';
     }
   }
   p.required {
     &:after {
-      color: $yellow;
+      color: $primary;
       content: ' *';
     }
   }

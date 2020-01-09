@@ -46,7 +46,7 @@ form.ajax {
       z-index: 999;
     }
     &:after {
-      @include spinner($space/6, 1.5*$space, $yellow, $light, $ease: 4*$ease);
+      @include spinner($space/6, 1.5*$space, $primary, $light, $ease: 4*$ease);
       bottom: 0;
       content: '';
       display: block;
@@ -63,8 +63,8 @@ form.ajax {
       .button:hover,
       .button:active,
       .button.active {
-        background: $yellow;
-        border-color: $yellow;
+        background: $primary;
+        border-color: $primary;
         cursor: auto;
       }
 

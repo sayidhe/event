@@ -44,7 +44,7 @@ p {
 }
 
 a {
-  color: $yellow;
+  color: $primary;
   transition-property: background, color;
   transition-duration: $ease;
 }
@@ -102,7 +102,7 @@ svg {
 }
 
 body.black-hero,
-body.yellow-hero {
+body.color-hero {
   #header,
   #content #hero {
     svg {
@@ -158,18 +158,18 @@ body.black-hero {
   }
 }
 
-body.yellow-hero {
+body.clor-hero {
   #header {
-    background: $yellow;
-    border-bottom-color: lighten($yellow, 10%);
-    color: darken($yellow, 40%);
+    background: $primary;
+    border-bottom-color: lighten($primary, 10%);
+    color: darken($primary, 40%);
   }
   #content {
     #hero {
-      background: $yellow;
+      background: $primary;
       .button {
         &:hover {
-          color: $yellow;
+          color: $primary;
         }
       }
     }
@@ -177,12 +177,12 @@ body.yellow-hero {
   #content {
     #hero {
       .clients {
-        border-top-color: lighten($yellow, 10%);
+        border-top-color: lighten($primary, 10%);
         &:after {
-          background-image: linear-gradient(to right, rgba($yellow, 0), rgba($yellow, 1));
+          background-image: linear-gradient(to right, rgba($primary, 0), rgba($primary, 1));
         }
         &:before {
-          background-image: linear-gradient(to left, rgba($yellow, 0), rgba($yellow, 1));
+          background-image: linear-gradient(to left, rgba($primary, 0), rgba($primary, 1));
         }
       }
     }
@@ -190,7 +190,7 @@ body.yellow-hero {
 }
 
 .black-bg,
-.yellow-bg,
+.color-bg,
 .grey-bg {
   overflow: hidden;
 }
@@ -200,7 +200,7 @@ body.yellow-hero {
 }
 
 .black-bg,
-.yellow-bg {
+.color-bg {
   color: #FFF;
 }
 
