@@ -15,7 +15,7 @@
   a {
     color: inherit;
     &:hover {
-      color: $black;
+      opacity: .8;
       text-decoration: none;
     }
   }
