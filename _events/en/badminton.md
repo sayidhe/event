@@ -14,8 +14,8 @@ sign_up: true
 lang: en
 categories:
     - en
-    - sport
+type: sport
 class: light-content
 ---
 
-羽球活动开始啦
+Badminton event started

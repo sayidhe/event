@@ -13,7 +13,7 @@ event_location: "静安少体校"
 sign_up: true
 lang: zh
 categories:
-    - sport
+type: sport
 class: light-content
 ---
 

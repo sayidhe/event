@@ -16,7 +16,7 @@ permalink: /:categories/:title/
 collections:
   events:
     output: true
-    permalink: /:categories/:title/
+    permalink: /:categories/:collection/:title/
 
 defaults:
   - scope:

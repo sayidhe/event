@@ -2,9 +2,21 @@
     <section class="links">
       <a class="link-home" href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}/">
         {% if lang == lang_default %}
-          {{ site.data.logos.logo }}
+          {% if page.type == "movie" %}
+            {{ site.data.logos.movie }}
+          {% elsif page.type == "sport" %}
+            {{ site.data.logos.sport }}
+          {% else %}
+            {{ site.data.logos.logo }}
+          {% endif %}
         {% else %}
-          {{ site.data.logos.logo_en }}
+          {% if page.type == "movie" %}
+            {{ site.data.logos.movie_en }}
+          {% elsif page.type == "sport" %}
+            {{ site.data.logos.sport_en }}
+          {% else %}
+            {{ site.data.logos.logo_en }}
+          {% endif %}
         {% endif %}
       </a>
       <div class="link-menus">
@@ -16,4 +28,3 @@
       </div>
     </section>
 </nav>
-  

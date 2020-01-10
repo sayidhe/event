@@ -18,7 +18,7 @@ sign_up: true
 lang: en
 categories:
     - en
-    - movie
+type: movie
 class: light-content
 ---
 

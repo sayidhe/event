@@ -17,7 +17,7 @@ event_location: "Sami 家"
 sign_up: true
 lang: zh
 categories:
-    - movie
+type: movie
 class: light-content
 ---
 
