@@ -87,10 +87,7 @@
     ul {
       list-style-type: none;
       width: 100%;
-
-      @include breakpoint(mobile) {
-        margin-left: 0;
-      }
+      margin: 0;
     }
     .event-title,
     .event-date {
