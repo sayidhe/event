@@ -1,21 +1,22 @@
 ---
 published: true
-title: Baminton
+title: "Badminton Event"
 image: /assets/images/events/sport/lindan.jpg
-qrcode_image: /assets/images/events/sport/2020-01-09-qrcode.jpg
+qrcode_image: /assets/images/events/sport/2020-01-19-qrcode.jpg
 icon: /assets/icons/icon-sport.svg
 tags: 
     - beginner
     - mid-level
     - 2 hours
-event_date: "Saturday, January 12, 2020, 3pm"
+event_date: "2020-1-18"
+event_time: "3PM-5PM Saturday"
 event_location: "Jingan"
 sign_up: true
 lang: en
 categories:
     - en
-type: sport
+    - sport
 class: light-content
 ---
 
-Badminton event started
+2020 Badminton event first session started

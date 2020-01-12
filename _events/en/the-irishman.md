@@ -1,6 +1,6 @@
 ---
 published: true
-title: The Irishman
+title: "The Irishman"
 image: /assets/images/events/movie/the-irishman.jpg
 qrcode_image: /assets/images/events/movie/2020-01-04-qrcode.jpg
 icon: /assets/icons/icon-movie.svg
@@ -12,13 +12,14 @@ casts:
     - Robert De Niro
     - Al Pacino
     - Joe Pesci
-event_date: "Saturday, January 3, 2020, 3pm"
+event_date: "2020-1-3"
+event_time: "3PM Saturday"
 event_location: "Sami's Home"
 sign_up: true
 lang: en
 categories:
     - en
-type: movie
+    - movie
 class: light-content
 ---
 

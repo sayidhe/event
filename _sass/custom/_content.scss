@@ -85,6 +85,25 @@
   #events {
     ul {
       list-style-type: none;
+      width: 100%;
+
+      @include breakpoint(mobile) {
+        margin-left: 0;
+      }
+    }
+    .event-title,
+    .event-date {
+      display: inline-block;
+    }
+
+    .event-date {
+      color: grey;
+
+      @include breakpoint(tablet) {
+        color: $grey;
+        text-align: right;
+        float: right;
+      }
     }
   }
 }

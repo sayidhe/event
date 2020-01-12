@@ -1,6 +1,6 @@
 ---
 published: true
-title: 爱尔兰人
+title: "爱尔兰人"
 image: /assets/images/events/movie/the-irishman.jpg
 qrcode_image: /assets/images/events/movie/2020-01-04-qrcode.jpg
 icon: /assets/icons/icon-movie.svg
@@ -12,12 +12,13 @@ casts:
     - 罗伯特·德尼罗
     - 阿尔·帕西诺
     - 乔·佩西
-event_date: "2020年1月3日 周六 下午三点"
+event_date: 2020-1-3
+event_time: "周六 下午三点"
 event_location: "Sami 家"
 sign_up: true
 lang: zh
 categories:
-type: movie
+    - movie
 class: light-content
 ---
 

@@ -29,14 +29,17 @@ layout: default
         <div class="time-location">
           <p class="margin-bottom-half">
             <span>{{ t.event.time }}</span>
-            <span>{{ page.event_date }}</span>
+            <span>{{ page.event_date | date: "%Y-%m-%d" }} {{ page.event_time }}</span>
           </p>
           <p>
             <span>{{ t.event.location }}</span>
             <span>{{ page.event_location }}</span>
           </p>
         </div>
-        <button class="button"><span>{{ t.event.sign_up }}</span></button>
+        {% if page.sign_up == true %}
+          <button class="button"><span>{{ t.event.sign_up }}</span></button>
+        {% else %}
+        {% endif %}
       </div>
     </div>
   </div>
