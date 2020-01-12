@@ -69,7 +69,4 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.remove('with-overlay');
     }
   };
-
-  // Check if the event date is passing
-  
 });

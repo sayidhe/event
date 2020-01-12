@@ -46,6 +46,9 @@
       margin-right: $space/2;
     }
   }
+  .current-event {
+    opacity: 0;
+  }
   .overdue {
     opacity: .6;
   }
