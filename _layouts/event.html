@@ -30,6 +30,12 @@ layout: default
           <p class="margin-bottom-half">
             <span>{{ t.event.time }}</span>
             <span>{{ page.event_date | date: "%Y-%m-%d" }} {{ page.event_time }}</span>
+            {% capture nowunix %}{{ 'now' | date: '%s'}}{% endcapture %}
+            {% capture eventtime %}{{ page.event_date | date: '%s'}}{% endcapture %}
+            {% if eventtime > nowunix %}
+            {% else %}
+              <span class="overdue">已过期</span>
+            {% endif %}
           </p>
           <p>
             <span>{{ t.event.location }}</span>

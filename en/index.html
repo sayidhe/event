@@ -8,23 +8,5 @@ class: dark-header
 
 {% include utils/i18n.liquid %}
 
-<section id="events">
-  <div class="container">
-    <div class="row">
-      <ul>
-        {% assign events = site.events | where: "lang", "en" %}
-        {% for event in events %}
-          <li>
-            <h2>
-              <div class="event-title">
-                <img src="{{ event.icon }}" alt="{{ event.categories }}">
-                <a href="{{ event.url }}">{{ event.title }}</a>
-              </div>
-              <span class="event-date">{{ event.event_date | date: "%m-%d" }}</span>
-            </h2>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</section>
+{% assign events = site.events | where: "lang", "en" %}
+{% include event-listing.html %}

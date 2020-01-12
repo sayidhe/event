@@ -97,13 +97,14 @@
     }
 
     .event-date {
-      color: grey;
 
       @include breakpoint(tablet) {
-        color: $grey;
         text-align: right;
         float: right;
       }
+    }
+    .overdue {
+      opacity: .4;
     }
   }
 }
