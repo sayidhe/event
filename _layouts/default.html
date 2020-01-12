@@ -8,7 +8,12 @@
 <head>
   {% if site.google_tag_manager %}{% include google/tag-manager.html %}{% endif %}
 
-  <title>{% if depth > 0 %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ page.title }}{% endif %}
+  <title>
+    {% if lang == lang_default %}
+      {% if depth > 0 %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ page.title }}{% endif %}
+    {% else %}
+      {% if depth > 0 %}{{ page.title }} | {{ site.title_en }}{% else %}{{ site.title_en }} | {{ page.title }}{% endif %}
+    {% endif %}
   </title>
 
   <!-- Meta -->
