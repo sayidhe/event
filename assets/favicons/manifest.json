@@ -1,10 +1,10 @@
 {
-    "name": "idoogu",
-    "short_name": "idoogu",
+    "name": "不定期趴",
+    "short_name": "event",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#fff",
-    "description": "idoogu就是爱嘟嘟.",
+    "description": "这是一个不定期趴",
     "icons": [{
       "src": "homescreen48.png",
       "sizes": "48x48",
@@ -34,6 +34,6 @@
       "platform": "web"
     }, {
       "platform": "play",
-      "url": "https://idoogu.com"
+      "url": "https://event.sayidhe.com"
     }]
   }
