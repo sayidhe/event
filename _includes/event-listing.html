@@ -6,7 +6,7 @@
             {% capture nowunix %}{{ 'now' | date: '%s'}}{% endcapture %}
             {% capture eventtime %}{{ event.event_date | date: '%s'}}{% endcapture %}
             {% if eventtime > nowunix %}
-              <li future-date="{{ event.date | date: '%Y%m%d' }}">
+              <li future-date="{{ event.event_date | date: '%Y%m%d' }}">
                 <h2>
                   <div class="event-title">
                     <img src="{{ event.icon }}" alt="{{ event.categories }}">
