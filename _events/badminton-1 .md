@@ -1,6 +1,6 @@
 ---
 published: true
-title: "羽球活动"
+title: "羽球"
 image: /assets/images/events/sport/lindan.jpg
 qrcode_image: /assets/images/events/sport/2020-01-19-qrcode.jpg
 icon: /assets/icons/icon-sport.svg

@@ -1,6 +1,6 @@
 ---
 published: true
-title: "Badminton Event"
+title: "Badminton"
 image: /assets/images/events/sport/lindan.jpg
 qrcode_image: /assets/images/events/sport/2020-01-19-qrcode.jpg
 icon: /assets/icons/icon-sport.svg

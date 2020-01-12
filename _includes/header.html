@@ -2,18 +2,28 @@
     <section class="links">
       <a class="link-home" href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}/">
         {% if lang == lang_default %}
-          {% if page.type == "movie" %}
-            {{ site.data.logos.movie }}
-          {% elsif page.type == "sport" %}
-            {{ site.data.logos.sport }}
+          {% if page.categories and page.casts != "" %}
+            {% for category in page.categories %}
+              {% if category == "movie" %}
+                {{ site.data.logos.movie }}
+              {% elsif category == "sport" %}
+                {{ site.data.logos.sport }}
+              {% else %}
+              {% endif %}
+            {% endfor %}
           {% else %}
             {{ site.data.logos.logo }}
           {% endif %}
         {% else %}
-          {% if page.type == "movie" %}
-            {{ site.data.logos.movie_en }}
-          {% elsif page.type == "sport" %}
-            {{ site.data.logos.sport_en }}
+          {% if page.categories and page.casts != "" %}
+            {% for category in page.categories %}
+              {% if category == "movie" %}
+                {{ site.data.logos.movie_en }}
+              {% elsif category == "sport" %}
+                {{ site.data.logos.sport_en }}
+              {% else %}
+              {% endif %}
+            {% endfor %}
           {% else %}
             {{ site.data.logos.logo_en }}
           {% endif %}
