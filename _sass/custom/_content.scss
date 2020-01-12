@@ -5,7 +5,7 @@
   #hero {
     color: $black;
     height: 100vh;
-    min-height: 100%;
+    min-height: 480px;
     // background-image: url(images/poster.jpg);
     background-size: cover;
     background-position: center center;
@@ -15,7 +15,7 @@
       content: '';
       position: absolute;
       height: 100vh;
-      min-height: 100%;
+      min-height: 480px;
       top: 0;
       right: 0;
       bottom: 0;
