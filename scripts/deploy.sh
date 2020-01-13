@@ -4,7 +4,7 @@ if [[ $TRAVIS_BRANCH == 'gh-pages' ]] ; then
   cd _site
   git init
 
-  git config user.name "Travis CI"
+  git config user.name "sayidly"
   git config user.email "herq12315@gmail.com"
 
   git add .

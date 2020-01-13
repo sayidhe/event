@@ -4,6 +4,11 @@ rvm:
 
 install: 
   - gem install bundler jekyll html-proofer jekyll-sitemap
+
+before_script:
+    chmod +x scripts/build.sh
+    chmod +x scripts/deploy.sh
+
 script: 
   - scripts/build.sh
 
