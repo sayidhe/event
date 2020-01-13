@@ -2,6 +2,7 @@
 
 if [[ $TRAVIS_BRANCH == 'gh-pages' ]] ; then
   cd _site
+  rm CNAME
   git init
 
   git config user.name "sayidly"
