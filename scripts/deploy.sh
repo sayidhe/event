@@ -4,7 +4,7 @@ if [[ $TRAVIS_BRANCH == 'gh-pages' ]] ; then
   cd _site
   rm CNAME
   touch README.md
-  echo "# 快速 setup node server\n初始化目录: \`npm init\`\n安装 http server: \`npm install http-server\`\n开启 http server: \`http-server [path] [options]\`" > README.md
+  echo $"# 快速 setup node server\n初始化目录: \`npm init\`\n安装 http server: \`npm install http-server\`\n开启 http server: \`http-server [path] [options]\`" > README.md
 
   git init
 
