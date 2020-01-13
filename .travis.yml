@@ -1,9 +1,11 @@
 language: ruby
 rvm:
-- 2.1
+  - 2.4.1
 
-install: gem install bundler jekyll html-proofer jekyll-sitemap
-script: scripts/build.sh
+install: 
+  - gem install bundler jekyll html-proofer jekyll-sitemap
+script: 
+  - scripts/build.sh
 
 # branch whitelist
 branches:

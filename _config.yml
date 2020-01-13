@@ -52,7 +52,7 @@ sitemap:
   changefreq: weekly
 
 # Build settings
-exclude: ['README.md', 'Makefile']
+exclude: ['README.md', 'Makefile', 'scripts']
 
 # Plugins
 plugins:
