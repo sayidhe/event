@@ -1,4 +1,3 @@
-
 ## 使用 Jekyll CMS 和 egg sass
 
 - [jekyll](https://jekyllrb.com/) for cms
@@ -27,7 +26,7 @@
 
 ## CI tool
 
-- [Deploy Jekyll pages using Git and Travis CI](https://github.com/felixrieseberg/travis-jekyll-git)
+- 参考 [Deploy Jekyll pages using Git and Travis CI](https://github.com/felixrieseberg/travis-jekyll-git)
 
 Github 是一个很棒的方式来部署 Jekyll Pages, 但是在一些时候，你可能会想把 Jekyll page 部署在不同的服务器上就像（Azure Web Apps, AWS）。Jekyll 的优势在于创建静态网站，而我不想运行整个 Ruby 服务器。所以，我用 Travis CI 来创建 pipeline，提交新的 commits，测试页面，然后部署。下面是完整的流程：
 
