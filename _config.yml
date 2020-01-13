@@ -36,8 +36,8 @@ defaults:
       layout: "default"
 
 # Google tracking (Analytics and Google Tag Manager)
-google_tag_manager: 
-google_analytics: 
+google_tag_manager: GTM-PKZBH5W
+google_analytics: UA-156086798-1
 
 # SEO
 twitter: 
