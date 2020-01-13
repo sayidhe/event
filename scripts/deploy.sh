@@ -3,6 +3,26 @@
 if [[ $TRAVIS_BRANCH == 'gh-pages' ]] ; then
   cd _site
   rm CNAME
+  touch README.md
+  echo "
+    # 快速 setup node server
+
+    初始化目录
+    ```
+    npm init
+    ```
+
+    快速开启 `http server`
+    ```
+    npm install http-server
+    ```
+
+    开启 `http server`
+    ```
+    http-server [path] [options]
+    ```
+  " > README.md
+
   git init
 
   git config user.name "sayidly"

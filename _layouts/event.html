@@ -4,7 +4,7 @@ layout: default
 
 {% include utils/i18n.liquid %}
 
-<section id="hero" style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ page.image }}')">
+<section id="hero" style="background-image: url('{{ page.image }}')">
   <div class="container">
     <div class="row">
       <div class="left">
@@ -60,7 +60,7 @@ layout: default
         <h1>{{ t.event.scan_QRCode }}</h1>
       </div>
       <div class="subscribe">
-        <img src="{{ site.url }}{{ site.baseurl }}{{ page.qrcode_image }}" alt="qrcode">
+        <img src="{{ page.qrcode_image }}" alt="qrcode">
       </div>
     </div>
   </div>
