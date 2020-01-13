@@ -24,3 +24,7 @@
     浏览器输入 http://localhost:4000. 这时会下载 Jekyll 配置文件 (`_config.yml`) 和开发版配置 (`_config-dev.yml`)，并确保配置选项 `--incremental`.
 
     *更多细节, 请查看 `Makefile`.*
+
+## CI tool
+
+- [Deploy Jekyll pages using Git and Travis CI](https://github.com/felixrieseberg/travis-jekyll-git)

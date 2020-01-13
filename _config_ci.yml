@@ -1,0 +1,71 @@
+# Site settings
+title: 不定期趴
+title_en: IRREGULAR MEETUP
+email: 
+description: "不定期聚会"
+keywords:
+- Shanghai
+- Event
+- Movie
+- Airbnb
+
+# URL
+url: "https://event.sayidhe.com"
+baseurl: ""
+
+permalink: /:categories/:title/
+collections:
+  events:
+    output: true
+    permalink: /:categories/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Google tracking (Analytics and Google Tag Manager)
+google_tag_manager: 
+google_analytics: 
+
+# SEO
+twitter: 
+facebook: 
+logo: /assets/logo.png
+image: 
+social:
+  - 
+
+# Sitemap (see sitemap.xml)
+sitemap:
+  changefreq: weekly
+
+# Build settings
+exclude: ['README.md', 'Makefile']
+
+# Plugins
+plugins:
+- jekyll-sitemap
+
+# Multiligual
+lang:
+  - zh
+  - en
+
+# If not config, the first of languages will be the default
+lang_default:
+  - zh
+
+# sass:
+#   style: compressed
