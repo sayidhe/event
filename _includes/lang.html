@@ -9,7 +9,7 @@
         {% assign translation_url = page.url | replace_first: lang, translation_lang %}
       {% endif %}
     {% endif %}
-    <a href="{{ translation_url }}">
+    <a href="{{ translation_url }}" data-proofer-ignore>
       {{ site.data.translations[translation_lang].lang[translation_lang] }}
     </a>
   {% endif %}
