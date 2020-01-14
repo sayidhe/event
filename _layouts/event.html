@@ -12,7 +12,9 @@ layout: default
           <h1>{{ page.title }}</h1>
           <div class="basic-info">
             <div class="first-metadata-wrapper">
-              {% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}
+              {% for tag in page.tags %}
+                <span>{{ tag }}</span>
+              {% endfor %}
             </div>
             {% if page.casts and page.casts != "" %}
               <div class="second-metadata-wrapper">

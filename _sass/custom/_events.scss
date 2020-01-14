@@ -1,7 +1,7 @@
 .type-events {
   .first-metadata-wrapper {
     opacity: .6;
-    word-wrap: break-all;
+    word-wrap: break-word;
 
     span {
       padding-right: $space;
@@ -22,7 +22,7 @@
 
   .second-metadata-wrapper {
     opacity: .6;
-    word-wrap: break-all;
+    word-wrap: break-word;
 
     &>span:first-child {
       margin-right: $space/2;
