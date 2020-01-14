@@ -5,7 +5,8 @@ image: /assets/images/events/coding/lego-shanghai.jpg
 qrcode_image: /assets/images/events/coding/2020-01-14-qrcode.jpg
 icon: /assets/icons/icon-coding.svg
 tags: 
-    - 6-8 岁
+    - 6-8岁
+    - 台湾
     - 乐高
     - 摄影
     - 计算思维
@@ -19,4 +20,4 @@ categories:
 class: light-content
 ---
 
-结合当下欧美最火的计算思维让六到十岁的孩子学会拍电影
+来自台湾的乐高电影寒假学习营。结合当下欧美最火的计算思维让六到十岁的孩子学会拍电影
