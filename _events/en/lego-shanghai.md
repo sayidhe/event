@@ -5,7 +5,7 @@ image: /assets/images/events/coding/lego-shanghai.jpg
 qrcode_image: /assets/images/events/coding/2020-01-14-qrcode.jpg
 icon: /assets/icons/icon-coding.svg
 tags: 
-    - 6-8 years
+    - 6-8years
     - kids
     - lego
     - photography
