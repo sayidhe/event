@@ -2,26 +2,28 @@
     <section class="links">
       <a class="link-home" href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}/">
         {% if lang == lang_default %}
-          {% if page.categories and page.casts != "" %}
+          {% if page.categories %}
             {% for category in page.categories %}
               {% if category == "movie" %}
                 {{ site.data.logos.movie }}
               {% elsif category == "sport" %}
                 {{ site.data.logos.sport }}
               {% else %}
+                {{ site.data.logos.logo }}
               {% endif %}
             {% endfor %}
           {% else %}
             {{ site.data.logos.logo }}
           {% endif %}
         {% else %}
-          {% if page.categories and page.casts != "" %}
-            {% for category in page.categories %}
+          {% if page.categories[1] %}
+            {% for category in page.categories[1] %}
               {% if category == "movie" %}
                 {{ site.data.logos.movie_en }}
               {% elsif category == "sport" %}
                 {{ site.data.logos.sport_en }}
               {% else %}
+                {{ site.data.logos.logo_en }}
               {% endif %}
             {% endfor %}
           {% else %}
