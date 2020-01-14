@@ -1,19 +1,18 @@
 ---
 published: true
 title: "Lego Shanghai"
-image: 
+image: /assets/images/events/coding/lego-shanghai.jpg
 qrcode_image: /assets/images/events/coding/2020-01-14-qrcode.jpg
 icon: /assets/icons/icon-coding.svg
 tags: 
-    - 6-8 years old
+    - 6-8 years
     - kids
     - lego
     - photography
     - coding
-    - Computational thinking
 event_date: 2020-2-7
 event_time: "9:30 - 16:30"
-event_location: "Tentative"
+event_location: "To be determined"
 sign_up: true
 lang: en
 categories:
