@@ -6,6 +6,7 @@
     span {
       padding-right: $space;
       position: relative;
+      word-wrap: break-word;
 
       &::after {
         content: "|";
@@ -23,6 +24,10 @@
   .second-metadata-wrapper {
     opacity: .6;
     word-wrap: break-word;
+
+    span {
+      word-wrap: break-word;
+    }
 
     &>span:first-child {
       margin-right: $space/2;
