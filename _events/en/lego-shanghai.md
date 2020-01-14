@@ -12,7 +12,7 @@ tags:
     - coding
 event_date: 2020-2-7
 event_time: "9:30 - 16:30"
-event_location: "To be determined"
+event_location: "Shanghai & Qingdao"
 sign_up: true
 lang: en
 categories:

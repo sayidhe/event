@@ -11,7 +11,7 @@ tags:
     - 计算思维
 event_date: 2020-2-7
 event_time: "9:30 - 16:30"
-event_location: "暂定"
+event_location: "上海、青岛"
 sign_up: true
 lang: zh
 categories:
