@@ -16,6 +16,7 @@ event_date: "2020-1-3"
 event_time: "3PM Saturday"
 event_location: "Sami's Home"
 sign_up: true
+sign_up_type: "qrcode"
 lang: en
 categories:
     - en

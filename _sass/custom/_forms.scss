@@ -163,6 +163,7 @@ textarea,
   position: relative;
   label {
     cursor: text;
+    text-align: left;
     display: block;
     @include font-size($smaller);
     font-weight: 300;

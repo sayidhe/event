@@ -12,6 +12,7 @@ event_date: 2020-1-18
 event_time: "周六 下午3-5点"
 event_location: "静安少体校"
 sign_up: true
+sign_up_type: "qrcode"
 lang: zh
 categories:
     - sport

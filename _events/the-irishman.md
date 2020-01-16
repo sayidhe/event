@@ -16,6 +16,7 @@ event_date: 2020-1-3
 event_time: "周六 下午三点"
 event_location: "Sami 家"
 sign_up: true
+sign_up_type: "qrcode"
 lang: zh
 categories:
     - movie

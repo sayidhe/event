@@ -126,7 +126,7 @@
       
       &:hover {
         cursor: pointer;
-        color: $orange;
+        color: $black;
       }
     }
     
@@ -168,54 +168,6 @@
           color: $orange;
         }
       }
-      
-      form {
-        overflow: hidden;
-        
-        input {
-          width: 100%;
-          float: left;
-          padding: 15px 20px;
-          text-align: center;
-          font-family: inherit;
-          font-size: 1.1rem;
-          letter-spacing: 0.05rem;
-          outline: 0;
-          
-          &[type=email] {
-            margin-bottom: 15px;
-            border: 1px solid lighten($grey, 50%);
-            @include transition(all .4s);
-            
-            @media (min-width: 768px) {
-              margin-bottom: 0px;
-              width: 75%;
-              border-right-width: 0px;
-            }
-            
-            &:focus {
-              border-color: $grey;
-            }
-          }
-          
-          &[type=submit] {
-            background-color: $purple;
-            color: $white;
-            border: 1px solid $purple;
-            @include transition(all .4s);
-            
-            @media (min-width: 768px) {
-              width: 25%;
-            }
-            
-            &:hover {
-              cursor: pointer;
-              background-color: darken($purple, 10%);
-              border-color: darken($purple, 10%);
-            }
-          }
-        }
-      }
     }
   }
   
@@ -230,5 +182,10 @@
       @include transition-delay(.3s);
       @include transform(translateX(0px));
     }
+  }
+
+  .button {
+    color: $black;
+    border: 1px solid $black;
   }
 }

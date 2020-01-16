@@ -1,4 +1,4 @@
-$('button').click(function () {
+$('#popup').click(function () {
     $('.pop-up').addClass('open');
 });
 

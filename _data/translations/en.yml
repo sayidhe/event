@@ -10,22 +10,15 @@ event:
   sign_up: Sign Up
   close: Close
   scan_QRCode: Scan the QR Code
+  signup_Form: Sign Up
   time: Time
   location: Location
 
-  
+
 demo:
-  success:
-    title: 报名成功!
-    body: 你应该有收到我们的确认邮件。 如果没有， <a href='mailto:hello@idoogu.com'>联系我们</a>。
   form:
-    title-s: 学员信息
-    title-c: 课程信息
     fields:
-      p-name: 家长姓名
-      s-name: 学员姓名
-      email: 邮箱
-      phone: 电话号码
-      wechat: 微信ID
-      comment: 留言
-    submit: 完成报名
+      name: Nikename
+      join: I want to join
+      not_join: I don't want to join
+    submit: Complete

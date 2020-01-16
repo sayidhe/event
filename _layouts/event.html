@@ -46,7 +46,14 @@ layout: default
           </p>
         </div>
         {% if page.sign_up == true %}
-          <button class="button"><span>{{ t.event.sign_up }}</span></button>
+          {% if page.sign_up_type == "link" %}
+            <button id="link" class="button" onclick="window.location.href='{{ page.link }}';"><span>{{ t.event.sign_up }}</span></button>
+          {% elsif page.sign_up_type == "qrcode" %}
+            <button id="popup" class="button"><span>{{ t.event.sign_up }}</span></button>
+          {% elsif page.sign_up_type == "form" %}
+            <button id="popup" class="button"><span>{{ t.event.sign_up }}</span></button>
+          {% else %}
+          {% endif %}
         {% else %}
         {% endif %}
       </div>
@@ -58,12 +65,22 @@ layout: default
   <div class="content">
     <div class="container">
       <span class="close">{{ t.event.close }}</span>
-      <div class="title">
-        <h1>{{ t.event.scan_QRCode }}</h1>
-      </div>
-      <div class="subscribe">
-        <img src="{{ page.qrcode_image }}" alt="qrcode">
-      </div>
+      {% if page.sign_up_type == "qrcode" %}
+        <div class="title">
+          <h1>{{ t.event.scan_QRCode }}</h1>
+        </div>
+        <div class="subscribe">
+          <img src="{{ page.qrcode_image }}" alt="qrcode">
+        </div>
+      {% elsif page.sign_up_type == "form" %}
+        <div class="title">
+          <h1>{{ t.event.signup_Form }}</h1>
+        </div>
+        <div class="subscribe">
+          {% include form.html %}
+        </div>
+      {% else %}
+      {% endif %}
     </div>
   </div>
 </div>
