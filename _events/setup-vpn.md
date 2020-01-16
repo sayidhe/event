@@ -2,6 +2,7 @@
 published: true
 title: "《永久档案》读书会"
 video: /assets/images/events/coding/cmatrix.mp4
+video_webm: /assets/images/events/coding/cmatrix.webm
 image: /assets/images/events/coding/cmatrix.jpg
 qrcode_image:
 icon: /assets/icons/icon-coding.svg

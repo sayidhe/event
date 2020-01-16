@@ -8,6 +8,7 @@ layout: default
   {% if page.video %}
     <video poster="{{ page.image }}" id="bgvid" playsinline autoplay muted loop>
       <source src="{{ page.video }}" type="video/mp4">
+      <source src="{{ page.video_webm }}" type="video/webm">
     </video>
   {% endif %}
   <div class="container">
