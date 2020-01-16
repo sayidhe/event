@@ -1,6 +1,6 @@
 ---
 published: true
-title: "《永久档案》读书会"
+title: "如何实现更私密和匿名的浏览"
 video: /assets/images/events/coding/cmatrix.mp4
 video_webm: /assets/images/events/coding/cmatrix.webm
 image: /assets/images/events/coding/cmatrix.jpg

@@ -7,8 +7,8 @@ layout: default
 <section id="hero" {% if page.image and page.video %}style=""{% else %}style="background-image: url('{{ page.image }}')"{% endif %}>
   {% if page.video %}
     <video poster="{{ page.image }}" id="bgvid" playsinline autoplay muted loop>
-      <source src="{{ page.video }}" type="video/mp4">
       <source src="{{ page.video_webm }}" type="video/webm">
+      <source src="{{ page.video }}" type="video/mp4">
     </video>
   {% endif %}
   <div class="container">
