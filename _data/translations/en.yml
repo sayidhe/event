@@ -10,7 +10,7 @@ event:
   sign_up: Sign Up
   close: Close
   scan_QRCode: Scan the QR Code
-  signup_Form: Waiting for inviting
+  signup_Form: Wait for inviting
   time: Time
   location: Location
 
