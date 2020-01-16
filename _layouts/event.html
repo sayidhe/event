@@ -4,7 +4,12 @@ layout: default
 
 {% include utils/i18n.liquid %}
 
-<section id="hero" style="background-image: url('{{ page.image }}')">
+<section id="hero" {% if page.image and page.video %}style=""{% else %}style="background-image: url('{{ page.image }}')"{% endif %}>
+  {% if page.video %}
+    <video poster="{{ page.image }}" id="bgvid" playsinline autoplay muted loop>
+      <source src="{{ page.video }}" type="video/mp4">
+    </video>
+  {% endif %}
   <div class="container">
     <div class="row">
       <div class="left">

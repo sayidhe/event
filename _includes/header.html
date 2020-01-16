@@ -34,7 +34,7 @@
       <div class="link-menus">
         {% for item in site.data.menu %}
           {% if item.url %}<a href="{{ item.url }}" class="link-{{ item.id }}">{{ t.menu[item.id] }}</a>
-          {% else %}<a href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}{{ item.path }}" class="link-{{ item.id }}">{{ t.menu[item.id] }}</a>{% endif %}
+          {% else %}<a href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}/{{ item.path }}" class="link-{{ item.id }}">{{ t.menu[item.id] }}</a>{% endif %}
         {% endfor %}
         {% include lang.html %}
       </div>
