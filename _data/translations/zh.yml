@@ -10,7 +10,7 @@ event:
   sign_up: 立即报名
   close: 关闭
   scan_QRCode: 扫描二维码
-  signup_Form: 报名表单
+  signup_Form: 等待邀请
   time: 时间
   location: 地点
 
@@ -19,6 +19,6 @@ demo:
   form:
     fields:
       name: 昵称
-      join: 我想加入
-      not_join: 我不想加入
+      join: 我感兴趣
+      not_join: 我不感兴趣
     submit: 完成

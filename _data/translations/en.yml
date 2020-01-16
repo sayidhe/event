@@ -10,7 +10,7 @@ event:
   sign_up: Sign Up
   close: Close
   scan_QRCode: Scan the QR Code
-  signup_Form: Sign Up
+  signup_Form: Waiting for inviting
   time: Time
   location: Location
 
@@ -19,6 +19,6 @@ demo:
   form:
     fields:
       name: Nikename
-      join: I want to join
-      not_join: I don't want to join
+      join: I am interested
+      not_join: I don't interested
     submit: Complete
