@@ -2,7 +2,7 @@
 published: true
 title: "How to browse privately and anonymously"
 image: /assets/images/events/coding/cmatrix.jpg
-link: /register/index.html
+qrcode_image:
 icon: /assets/icons/icon-coding.svg
 tags: 
     - network
