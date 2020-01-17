@@ -21,6 +21,6 @@ categories:
 class: light-content
 ---
 
-看完了**爱德华·斯诺登**的新书[**《永久档案》**][permanent-record-link]，来分享一下读后感。
+看完了**爱德华·斯诺登**的新书[**《永久档案》**][permanent-record-link]，来分享一下读后感和书中提到的技术。
 
 [permanent-record-link]: https://www.amazon.com/Permanent-Record-Edward-Snowden/dp/1250237238

@@ -91,14 +91,11 @@
       width: 100%;
       margin: 0;
     }
-    .event-title,
-    .event-date {
-      display: inline-block;
-    }
 
     .event-date {
       @include breakpoint(tablet) {
         text-align: right;
+        display: inline-block;
         float: right;
       }
     }
