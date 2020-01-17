@@ -41,9 +41,9 @@ layout: default
             {% capture nowunix %}{{ 'now' | date: '%s'}}{% endcapture %}
             {% capture eventtime %}{{ page.event_date | date: '%s'}}{% endcapture %}
             {% if eventtime > nowunix %}
-              <span future-date="{{ page.event_date | date: '%Y%m%d' }}" class="non-overdue">已过期</span>
+              <span future-date="{{ page.event_date | date: '%Y%m%d' }}" class="non-expired">{{ t.event.expired }}</span>
             {% else %}
-              <span class="overdue">已过期</span>
+              <span class="expired">{{ t.event.expired }}</span>
             {% endif %}
           </p>
           <p>

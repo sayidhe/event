@@ -13,6 +13,7 @@ event:
   signup_Form: 等待邀请
   time: 时间
   location: 地点
+  expired: 已过期
 
 
 demo:

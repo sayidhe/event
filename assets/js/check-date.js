@@ -11,5 +11,5 @@ function getCompareDate() {
 }
 
 $('[future-date]').each(function () {
-    if ($(this).attr('future-date') < getCompareDate()) $(this).addClass("overdue");
+    if ($(this).attr('future-date') < getCompareDate()) $(this).addClass("expired");
 });

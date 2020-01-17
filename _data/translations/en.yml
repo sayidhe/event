@@ -13,6 +13,7 @@ event:
   signup_Form: Wait for inviting
   time: Time
   location: Location
+  expired: Expired
 
 
 demo:
