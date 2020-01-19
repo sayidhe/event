@@ -7,5 +7,5 @@ lang: zh
 
 {% include utils/i18n.liquid %}
 
-{% assign events = site.events | where: "lang", "zh" %}
+{% assign events = site.events | where: "lang", "zh" | sort: 'event_date' | reverse %}
 {% include event-listing.html %}

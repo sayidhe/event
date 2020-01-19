@@ -7,5 +7,5 @@ lang: en
 
 {% include utils/i18n.liquid %}
 
-{% assign events = site.events | where: "lang", "en" %}
+{% assign events = site.events | where: "lang", "en" | sort: 'event_date' | reverse %}
 {% include event-listing.html %}
