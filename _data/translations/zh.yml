@@ -8,12 +8,14 @@ menu:
 event:
   casts: 演员
   sign_up: 立即报名
-  close: 关闭
-  scan_QRCode: 扫描二维码
-  signup_Form: 等待邀请
   time: 时间
   location: 地点
   expired: 已过期
+  popup:
+    close: 关闭
+    scan_QRCode: 扫描二维码
+    signup_Form: 等待邀请
+    explaination: 扫描或长按二维码提取
 
 
 demo:

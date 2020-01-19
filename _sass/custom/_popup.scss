@@ -155,6 +155,15 @@
         max-width: 300px;
       }
     }
+
+    small {
+      display: block;
+      color: $grey;
+      opacity: 0;
+      @include transform(translateX(60px));
+      @include transition(.2s);
+      -webkit-backface-visibility: hidden;
+    }
     
     .subscribe {
       h1 {
@@ -176,7 +185,8 @@
     opacity: 1;
     @include transform(translate(-50%, -50%) scale(1));
     
-    img {
+    img,
+    small {
       opacity: 1;
       @include transition(1s);
       @include transition-delay(.3s);

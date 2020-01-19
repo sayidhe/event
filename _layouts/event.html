@@ -70,17 +70,18 @@ layout: default
 <div id="pop-up" class="pop-up">
   <div class="content">
     <div class="container">
-      <span class="close">{{ t.event.close }}</span>
+      <span class="close">{{ t.event.popup.close }}</span>
       {% if page.sign_up_type == "qrcode" %}
         <div class="title">
-          <h1>{{ t.event.scan_QRCode }}</h1>
+          <h1>{{ t.event.popup.scan_QRCode }}</h1>
         </div>
         <div class="subscribe">
           <img src="{{ page.qrcode_image }}" alt="qrcode">
+          <small class="align-center">{{ t.event.popup.explaination }}</small>
         </div>
       {% elsif page.sign_up_type == "form" %}
         <div class="title">
-          <h1>{{ t.event.signup_Form }}</h1>
+          <h1>{{ t.event.popup.signup_Form }}</h1>
         </div>
         <div class="subscribe">
           {% include form.html %}

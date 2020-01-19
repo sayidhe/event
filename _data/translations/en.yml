@@ -8,12 +8,14 @@ menu:
 event:
   casts: Starring
   sign_up: Sign Up
-  close: Close
-  scan_QRCode: Scan the QR Code
-  signup_Form: Wait for inviting
   time: Time
   location: Location
   expired: Expired
+  popup:
+    close: Close
+    scan_QRCode: Scan the QR Code
+    signup_Form: Wait for inviting
+    explaination: Scan or long press to extract
 
 
 demo:
