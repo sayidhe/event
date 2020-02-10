@@ -10,7 +10,7 @@ tags:
     - network
     - anonymous
     - vpn
-event_date: 2020-2-15
+event_date: 2020-3-14
 event_time: "3PM 周六"
 event_location: "上海"
 sign_up: true
