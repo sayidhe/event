@@ -15,7 +15,7 @@ sign_up: true
 sign_up_type: "qrcode"
 lang: zh
 categories:
-    - sport
+    - game
 class: light-content
 ---
 
