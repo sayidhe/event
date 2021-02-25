@@ -1,6 +1,6 @@
 ---
 published: true
-title: "羽球"
+title: "羽球 2021"
 image: /assets/images/events/sport/lindan.jpg
 qrcode_image: /assets/images/events/sport/2021-02-27-qrcode.jpg
 icon: /assets/icons/icon-sport.svg
@@ -19,4 +19,4 @@ categories:
 class: light-content
 ---
 
-2021 第一届羽球活动开始啦
+2021 第一届羽球活动开始啦（限额8人）
